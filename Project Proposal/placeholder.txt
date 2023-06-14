@@ -2,11 +2,8 @@ I'm just a placeholder to keep the proper directory structure.
     Feel free to delete me after you have added some other files to this directory. 
 
 OBJECTIVE/PROBLEM (5 points)
-    Project Title: 
-    Background Information on chosen project topic: 
-Accessing to credit is a key element in personal finance. Thanks to the development of internet, young generation is subject to higher standards than their
-It is crucial to have a fair and transparent process in approving credit while balancing between lender's risk and return. Thus, we are excited to look into a mortgage a
-
+Project Title: 
+Background Information on chosen project topic: 
 
 Problem Statement (clear and concise statement explaining purpose of your analysis and investigation): 
 
