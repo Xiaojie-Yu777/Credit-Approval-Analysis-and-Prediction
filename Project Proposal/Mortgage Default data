@@ -1,4 +1,8 @@
-Hi Team, I am looking at the credit default/approval and found mortgage loan to have more 
+Hi Team, I am looking at the UIC credit default/approval and there are so many published analysises using that dataset. They are all looking at how to predict if someone will default.
+If we are heading to the same direction, I am worried that we will be judged at a higher standard due to the topic's popularity. 
+I found mortgage loan process can be analyzed at different angle and more dataset to 
+
+
 https://github.com/oneapi-src/loan-default-risk-prediction
 OBJECTIVE/PROBLEM (5 points)
     Project Title: 
