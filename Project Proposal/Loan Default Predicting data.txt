@@ -8,12 +8,15 @@ https://www.kaggle.com/datasets/laotse/credit-risk-dataset ( the data set- 32k r
 
 OBJECTIVE/PROBLEM (5 points)
     Project Title: 
-    Background Information on chosen project topic: https://www.mckinsey.com/capabilities/risk-and-resilience/our-insights/the-coming-opportunity-in-consumer-lending
+    
+    Background Information on chosen project topic: 
+    
 Accessing to credit is a key element in personal finance. During the last decade, with the widespread of internet and growth of technology, lenders are developing and optimizing machine learning models to minimize the risk of default and increase their ROI. Thus end user has been subject certain "standard" in order to access those loans. 
 As an end user, we also want to understand if there are any statistical significant in meeting the " standard" and whether there are any bias in the predicting model that lenders use to evaluate our application. 
 (https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
 
-Problem Statement (clear and concise statement explaining purpose of your analysis and investigation): 
+    Problem Statement (clear and concise statement explaining purpose of your analysis and investigation): 
+
 During 2020-2022 period where the world shut down due to Covid, most banking reported 
 Using the given dataset, we want to determine factors that are significant indicators of default risk and whether these factors are the same given variety of loan types( loan_intent : 6 types). Based on these factors, we would like to build a model to predict the probability of default for each applicant. 
 
