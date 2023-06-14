@@ -1,2 +1,59 @@
 Hi Team, I am looking at the credit default/approval and found mortgage loan to have more 
 https://github.com/oneapi-src/loan-default-risk-prediction
+OBJECTIVE/PROBLEM (5 points)
+    Project Title: 
+    Background Information on chosen project topic: 
+Accessing to credit is a key element in personal finance. Thanks to the development of internet, young generation is subject to higher standards than their
+It is crucial to have a fair and transparent process in approving credit while balancing between lender's risk and return. Thus, we are excited to look into a mortgage a
+
+
+Problem Statement (clear and concise statement explaining purpose of your analysis and investigation): 
+
+State your Primary Research Question (RQ):
+
+Add some possible Supporting Research Questions (2-4 RQs that support problem statement): 
+1.	
+2.	
+
+Business Justification: (Why is this problem interesting to solve from a business viewpoint? Try to quantify the financial, marketing or operational aspects and implications of this problem, as if you were running a company, non-profit organization, city or government that is encountering this problem.)
+
+
+
+
+DATASET/PLAN FOR DATA (4 points)
+Data Sources (links, attachments, etc.): 
+
+
+Data Description (describe each of your data sources, include screenshots of a few rows of data): 
+
+
+
+Key Variables: (which ones will be considered independent and dependent? Are you going to create new variables? What variables do you hypothesize beforehand to be most important?)
+
+
+APPROACH/METHODOLOGY (8 points)
+Planned Approach (In paragraph(s), describe the approach you will take and what are the models you will try to use? Mention any data transformations that would need to happen. How do you plan to compare your models? How do you plan to train and optimize your model hyper-parameters?))
+
+
+
+
+
+
+
+Anticipated Conclusions/Hypothesis (what results do you expect, how will you approach lead you to determining the final conclusion of your analysis) Note: At the end of the project, you do not have to be correct or have acceptable accuracy, the purpose is to walk us through an analysis that gives the reader insight into the conclusion regarding your objective/problem statement
+
+
+
+
+What business decisions will be impacted by the results of your analysis? What could be some benefits?
+
+
+
+
+PROJECT TIMELINE/PLANNING (2 points)
+Project Timeline/Mention key dates you hope to achieve certain milestones by:
+
+
+
+
+Appendix (any preliminary figures or charts that you would like to include): 
