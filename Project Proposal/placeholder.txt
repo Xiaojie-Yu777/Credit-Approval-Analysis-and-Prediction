@@ -1,13 +1,12 @@
-I'm just a placeholder to keep the proper directory structure. 
-    Feel free to delete me after you have added some other files to this directory. 
-    
- -- Found deep analysis of UIC dataset using R : https://www.researchgate.net/publication/321002603_Credit_Approval_Analysis_using_R   
-    
-    
 
 OBJECTIVE/PROBLEM (5 points)
-Project Title: 
+Project Title:  Credit Approval Analysis
 Background Information on chosen project topic: 
+Accessing to credit is a key element in personal finance. During the last decade, with the widespread of internet and growth of technology, lenders are developing and optimizing machine learning models to minimize the risk of default and increase their ROI. 
+
+Thus end user has been subject to certain "standard" in order to access those loans. 
+ 
+(https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
 
 Problem Statement (clear and concise statement explaining purpose of your analysis and investigation): 
 
@@ -19,6 +18,8 @@ Add some possible Supporting Research Questions (2-4 RQs that support problem st
 
 Business Justification: (Why is this problem interesting to solve from a business viewpoint? Try to quantify the financial, marketing or operational aspects and implications of this problem, as if you were running a company, non-profit organization, city or government that is encountering this problem.)
 
+Credit risk is an important aspect of finance. Enhancing existing models and improving prediction accuracy for credit risk 
+
 
 
 
@@ -27,10 +28,30 @@ Data Sources (links, attachments, etc.):
 
 
 Data Description (describe each of your data sources, include screenshots of a few rows of data): 
-
-
-
+The main dataset is the Credit Approval dataset taken from the archives of the machine learning repository of the University of California. It contains data from credit card application. 
 Key Variables: (which ones will be considered independent and dependent? Are you going to create new variables? What variables do you hypothesize beforehand to be most important?)
+There are 15  independent variables in the dataset, including:
+1.	Gender
+2.	Age
+3.	Debt
+4.	Marital status
+5.	Bank customer
+6.	Educational level
+7.	Ethnicity
+8.	Years of employment
+9.	Prior default
+10.	Employed
+11.	Credit Score
+12.	Driver license
+13.	Citizen
+14.	Zip code
+15.	Income 
+There is one  dependent variable: Approved.
+
+We are going to create dummy variables for all the category variables( gender,bank_customer,marital status,bank customer,prior default,employed,driver license)
+For age,debt,education level,years of employment,ethnicity 
+
+
 
 
 APPROACH/METHODOLOGY (8 points)
@@ -58,4 +79,4 @@ Project Timeline/Mention key dates you hope to achieve certain milestones by:
 
 
 
-Appendix (any preliminary figures or charts that you would like to include): 
+Appendix (any preliminary figures or charts that you would like to include):
