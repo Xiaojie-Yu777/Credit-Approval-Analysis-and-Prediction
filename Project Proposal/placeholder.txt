@@ -1,12 +1,10 @@
 
 OBJECTIVE/PROBLEM (5 points)
-Project Title:  Credit Approval Analysis
-Background Information on chosen project topic: 
-Accessing to credit is a key element in personal finance. During the last decade, with the widespread of internet and growth of technology, lenders are developing and optimizing machine learning models to minimize the risk of default and increase their ROI. 
 
-Thus end user has been subject to certain "standard" in order to access those loans. 
- 
-(https://www.kaggle.com/datasets/laotse/credit-risk-dataset)
+Project Title:  Credit Approval Analysis
+
+Background Information on chosen project topic: 
+Accessing to credit is a key element in personal finance. During the last decade, with the widespread of internet and growth of technology, lenders are constantly developing and optimizing machine learning models to predict credit risk. This powerful technology can leverage banks and financial institutions to increase their market share in consumer lending while minimize the risk of default and increase their ROI.  
 
 Problem Statement (clear and concise statement explaining purpose of your analysis and investigation): 
 
