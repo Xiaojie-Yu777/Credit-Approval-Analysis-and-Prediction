@@ -1,49 +1,50 @@
-
 OBJECTIVE/PROBLEM (5 points)
-
 Project Title:  Credit Approval Analysis
-
 Background Information on chosen project topic: 
-Accessing to credit is a key element in personal finance. During the last decade, with the widespread of internet and growth of technology, lenders are constantly developing and optimizing machine learning models to predict credit risk. This powerful technology can leverage banks and financial institutions to increase their market share in consumer lending while minimize the risk of default and increase their ROI.  
-
+Credit is an important factor in our economy. Business needs credit to facilitate business activity, spend on capital expenditures, create jobs and thus indirectly stimulating the economy. Individuals needs credit to fund major expenses, such as: education, real estates, autos, etc. Thus, it is very important to facilitate lending in the economy without incurring excessive risks. 
+During the last decade, with the widespread of internet and growth of technology, lenders are constantly developing and optimizing machine learning models to predict credit risk. This powerful technology can leverage banks and financial institutions to increase their market share in consumer lending while minimize the risk of default and increase their ROI.  
 Problem Statement (clear and concise statement explaining purpose of your analysis and investigation): 
-
+During the evaluation process, lenders  look at socio-economic and demographic statistics of the applicant to make decision rule and minimize risk. However, whether this process is  unbiased is still a debatable issue. 
 State your Primary Research Question (RQ):
 
-Add some possible Supporting Research Questions (2-4 RQs that support problem statement): 
-1.	
-2.	
 
+Add some possible Supporting Research Questions (2-4 RQs that support problem statement): 
+1.	Is there a correlation between Age, Debt, Income and Years of employment, Prior default and the credit approval status?  If yes, does the relationship indicate a reasonable risk management.  ( The second part of the question can be answered by examining a second dataset in which these 4 factors are independent variables to predict “default”. If these 4 factors are statistically significant in managing credit risk, it should have very high prediction accuracy for “ default” status.)
+
+2.	Ethnicity is a protected status and the decision to approve or deny an application cannot  base on the ethnicity of the applicant. Is there a statistically significant difference in how credit is granted between ethnicities that could indicate bias or discrimination? Are there any other attributes of person in each ethnicity group influencing the decision? ( For example: does  factor “educational level” influences the credit decision for ethnic group “A” the same way it affects ethnic group “B”)
 Business Justification: (Why is this problem interesting to solve from a business viewpoint? Try to quantify the financial, marketing or operational aspects and implications of this problem, as if you were running a company, non-profit organization, city or government that is encountering this problem.)
 
-Credit risk is an important aspect of finance. Enhancing existing models and improving prediction accuracy for credit risk 
 
 
 
 
 DATASET/PLAN FOR DATA (4 points)
 Data Sources (links, attachments, etc.): 
-
-
+1.	UIC Credit Approval dataset : 
+2.	Credit risk dataset: https://www.kaggle.com/datasets/laotse/credit-risk-dataset ( the data set- 32k row, 12 variables)
 Data Description (describe each of your data sources, include screenshots of a few rows of data): 
-The main dataset is the Credit Approval dataset taken from the archives of the machine learning repository of the University of California. It contains data from credit card application. 
+1.	The main dataset is the Credit Approval dataset taken from the archives of the machine learning repository of the University of California. It contains data from credit card application in the  US. The data is collected from the credit card application in the US. 
+2.	The second data set is the Credit Risk dataset 
 Key Variables: (which ones will be considered independent and dependent? Are you going to create new variables? What variables do you hypothesize beforehand to be most important?)
-There are 15  independent variables in the dataset, including:
-1.	Gender
-2.	Age
-3.	Debt
-4.	Marital status
-5.	Bank customer
-6.	Educational level
-7.	Ethnicity
-8.	Years of employment
-9.	Prior default
-10.	Employed
-11.	Credit Score
-12.	Driver license
-13.	Citizen
-14.	Zip code
-15.	Income 
+
+1.	UIC Credit Approval dataset: 
+There are 15  independent variables in the 1st dataset, including:
+
+2.	Gender	Whether the applicant is mal or not 	
+3.	Age	The age of the applicant	
+4.	Debt	The amount of debt the application has	
+5.	Marital status	Whether the applicant is married or not	
+6.	Bank customer	Which bank the applicant is a customer of	
+7.	Educational level	Education level of the applicant	
+8.	Ethnicity	Ethnicity of the applicant	
+9.	Years of employment	Number of years the applicant has been employed	
+10.	Prior default	Whether the applicant has previously defaulted on a credit account	
+11.	Employed	Whether the applicant is employed at the time of applying or not	
+12.	Credit Score	The applicant’s credit score	
+13.	Driver license	Whether the applicant has driver license or not	
+14.	Citizen	Whether the applicant is a citizen at the time of applying	
+15.	Zip code	Zip code in which the applicant’s resides	
+16.	Income 	Applicant’s annual income	
 There is one  dependent variable: Approved.
 
 We are going to create dummy variables for all the category variables( gender,bank_customer,marital status,bank customer,prior default,employed,driver license)
@@ -55,11 +56,13 @@ For age,debt,education level,years of employment,ethnicity
 APPROACH/METHODOLOGY (8 points)
 Planned Approach (In paragraph(s), describe the approach you will take and what are the models you will try to use? Mention any data transformations that would need to happen. How do you plan to compare your models? How do you plan to train and optimize your model hyper-parameters?))
 
-
-
-
-
-
+Our approach can be divided into 2 steps: 
+1.	Identify significant factors influencing the lender’s decision in approving credits. 
+a.	Method: examining the dataset to find outliners and missing values. Create imputation if needed. We have several categorical variables that we would need to create dummy variables. 
+b.	Variable selection: testing for correlation between factors or multicollinear. If there is none, we can proceed with at least 2 methods(stepwise regression, random forest) to see if the chosen variables will be the same. 
+2.	Based on those factors, we are going to do 2 things: 
+a.	Predict the application’s decision – regression model to evaluate the probability of being approved. We then can set the threshold in which, if the probability above  it, we will said the application is likely get approved. We will split data into training and testing. The metric that will be used to measure the “goodness” of the model will be confusion matrix (since our dependent variable “decision” is binary) 
+b.	Examine whether these factors are good indicators of credit risk management by predicting the default probability. 
 
 Anticipated Conclusions/Hypothesis (what results do you expect, how will you approach lead you to determining the final conclusion of your analysis) Note: At the end of the project, you do not have to be correct or have acceptable accuracy, the purpose is to walk us through an analysis that gives the reader insight into the conclusion regarding your objective/problem statement
 
@@ -70,11 +73,10 @@ What business decisions will be impacted by the results of your analysis? What c
 
 
 
-
 PROJECT TIMELINE/PLANNING (2 points)
 Project Timeline/Mention key dates you hope to achieve certain milestones by:
-
-
-
+By June 30th : Basic cleaning data and imputation. Variable Selection can be done. 
+By July 12th: Coding the prediction models for both application’s decision and default’s probability.
+By July 16th: 1st draft of the report can be generated for TA’s feedback. 
 
 Appendix (any preliminary figures or charts that you would like to include):
