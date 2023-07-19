@@ -77,5 +77,22 @@ Displaying the cross classification table
 predApproved <-factor(ifelse(pred>=0.5,"0","1"))
 table(test$Approved,predApproved)
 ```
-  
+Build the classification tree based on non-modified dataset- to answer 1st part of question which attributes are significant
+```{r}
+credit_data <-subset(credit_data,select=-c(ZipCode,Industry))
+credit_data$Gender <-factor(credit_data$Gender)
+credit_data$Approved <- factor(credit_data$Approved)
+credit_data$Married <-factor(credit_data$Married)
+credit_data$BankCustomer <-factor(credit_data$BankCustomer)
+credit_data$PriorDefault <-factor(credit_data$PriorDefault)
+credit_data$Employed <-factor(credit_data$Employed)
+credit_data$DriversLicense<-factor(credit_data$DriversLicense)
+fit.tree=rpart(Approved ~.,data=credit_data,method="class",cp=0.008)
+fit.tree
+rpart.plot(fit.tree)
+fit.tree$variable.importance
+pred.tree=predict(fit.tree,credit_data,type="class")
+table(pred.tree,credit_data$Approved)
+
+```  
   
