@@ -4,5 +4,5 @@
 
 ## Project Structure
 
-### [Code] (Code/)
+### [Code] (./Code/)
 This folder contains the individual code contributions from the team
