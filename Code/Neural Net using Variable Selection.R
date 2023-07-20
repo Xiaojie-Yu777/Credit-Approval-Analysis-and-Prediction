@@ -35,12 +35,13 @@ test <- New_credit_data[!sample,]
 # Train neural net on `mydata`
 model <- neuralnet(Approved~., data=train, hidden=2, linear.output=FALSE)
 
-# Plot the neural net
-plot(model, rep='best')
-
 # Make predictions on the test set
 pred <- predict(model, newdata=test[,1:6])
 
 # Create a confusion matrix to test the performance of the neural net
 predApproved <- factor(ifelse(pred >= 0.5,"1","0"))
 confusionMatrix(data=as.factor(test$Approved), reference=predApproved, positive="1")
+
+# Create an ROC curve and calculate the AUC
+credit_roc <- roc(test$Approved, pred)
+plot(credit_roc, print.auc=TRUE)

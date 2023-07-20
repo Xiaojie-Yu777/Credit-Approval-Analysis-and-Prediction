@@ -54,7 +54,7 @@ which(cumsum(var_explained) >= 0.9)
 
 # The first 12 components explain at least 90% of the data. Create new data frame called `mydata_nn` using first 12 components
 mydata <- data.frame(Class=train[,"Approved"], PCA_data$x[,1:13])
-head(mydata)
+#head(mydata)
 
 # Train neural net on `mydata_nn`
 model <- neuralnet(Class~., data=mydata, hidden=2, linear.output=FALSE)
@@ -69,3 +69,7 @@ pred <-predict(model, newdata=data.frame(test.p[,1:13]))
 # Create a confusion matrix to test the performance of the neural net
 predApproved <- factor(ifelse(pred >= 0.5,"1","0"))
 confusionMatrix(data=as.factor(test$Approved), reference=predApproved, positive="1")
+
+# Create an ROC curve and calculate the AUC
+credit_roc <- roc(test$Approved, pred)
+plot(credit_roc, print.auc=TRUE)
