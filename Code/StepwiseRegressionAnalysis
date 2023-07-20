@@ -1,0 +1,14 @@
+head(clean_data)
+# First we will do Forward Step-Wise Regression
+# Step 1 - create an intercept only model 
+model_intercept <- lm(Approved~1, data = clean_data)
+summary(model_intercept)
+# Step 2 - create a model with all predictors
+model_all <- lm(Approved~., data = clean_data)
+summary(model_all)
+# Step 3 - run the Forward Stepwise Regression
+model_forward <- step(model_intercept, direction='forward', scope=formula(model_all), trace=0)
+# Next we display the results of the stepwise Regression
+model_forward$anova
+# Lastly we display the finalized model
+model_forward$coefficients
